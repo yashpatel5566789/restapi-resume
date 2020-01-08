@@ -13,7 +13,7 @@ from rest_framework import serializers
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['created_at', 'updated_at']
         
 class ProfileSerializer(serializers.ModelSerializer):
     
